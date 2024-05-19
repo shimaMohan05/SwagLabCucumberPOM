@@ -9,11 +9,13 @@ import io.cucumber.java.Before;
 public class BasicHooks {
 	public WebDriver driver;
 	
+	
 	@Before
 	public void basicSteps()
 	{
 		driver=ThreadLocalDemo.setDriver();
-		driver.get("https://www.saucedemo.com/");
+		String url=UtilityClass.getConfigDetails("url");
+		driver.get(url);
 		
 		
 	}

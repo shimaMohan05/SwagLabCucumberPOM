@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import hookspack.ThreadLocalDemo;
+import hookspack.UtilityClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,9 +19,9 @@ public class CartTest {
     public CartPage cp=new CartPage(driver);
 	@Given("user should be in cart page")
 	public void user_should_be_in_cart_page() {
-		lp.toEnterCredentials("standard_user", "secret_sauce");
+		 lp.toEnterCredentials(UtilityClass.getConfigDetails("uname"), UtilityClass.getConfigDetails("pword"));
 	    lp.toLogin();
-	    ip.toSelectItem("Sauce Labs Backpack");
+	    ip.toSelectItem(UtilityClass.getConfigDetails("product"));
 	    ip.toCart();
 	    ip.toclickCart();
 

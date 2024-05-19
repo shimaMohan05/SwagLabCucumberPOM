@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import hookspack.ThreadLocalDemo;
+import hookspack.UtilityClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,13 +18,13 @@ public InventoryPage ip=new InventoryPage(driver);
 
 @Given("user is logged into swaglab application")
 public void user_is_logged_into_swaglab_application() {
-    lp.toEnterCredentials("standard_user", "secret_sauce");
+    lp.toEnterCredentials(UtilityClass.getConfigDetails("uname"), UtilityClass.getConfigDetails("pword"));
     lp.toLogin();
 }
 
 @When("check the products in the inventory page")
 public void check_the_products_in_the_inventory_page() {
-    ip.toSelectItem("Sauce Labs Backpack");
+    ip.toSelectItem(UtilityClass.getConfigDetails("product"));
 }
 
 @When("click on the cart button for the product {string}")

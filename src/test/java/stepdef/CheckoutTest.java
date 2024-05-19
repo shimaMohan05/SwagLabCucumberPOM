@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import hookspack.ThreadLocalDemo;
+import hookspack.UtilityClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,9 +22,9 @@ public class CheckoutTest {
 	@Given("user should be in checkout page")
 	public void user_should_be_in_checkout_page() {
 
-		lp.toEnterCredentials("standard_user", "secret_sauce");
+		 lp.toEnterCredentials(UtilityClass.getConfigDetails("uname"), UtilityClass.getConfigDetails("pword"));
 	    lp.toLogin();
-	    ip.toSelectItem("Sauce Labs Backpack");
+	    ip.toSelectItem(UtilityClass.getConfigDetails("product"));
 	    ip.toCart();
 	    ip.toclickCart();
 	    cp.toCheckOut();

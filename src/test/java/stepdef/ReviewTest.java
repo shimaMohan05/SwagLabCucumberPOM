@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import hookspack.ThreadLocalDemo;
+import hookspack.UtilityClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,24 +24,39 @@ public class ReviewTest {
 
 @Given("user should be in review page")
 public void user_should_be_in_review_page() {
-	lp.toEnterCredentials("standard_user", "secret_sauce");
+	 lp.toEnterCredentials(UtilityClass.getConfigDetails("uname"), UtilityClass.getConfigDetails("pword"));
+	 UtilityClass.toTakeScreenShot(driver);
     lp.toLogin();
-    ip.toSelectItem("Sauce Labs Backpack");
+    UtilityClass.getWait();
+    UtilityClass.toTakeScreenShot(driver);
+    ip.toSelectItem(UtilityClass.getConfigDetails("product"));
+    UtilityClass.getWait();
     ip.toCart();
     ip.toclickCart();
+    UtilityClass.toTakeScreenShot(driver);
+    UtilityClass.getWait();
     cp.toCheckOut();
-    cop.toEnterDetails("shima", "mohan", "560060");
+    UtilityClass.toTakeScreenShot(driver);
+    cop.toEnterDetails(UtilityClass.getConfigDetails("fname"), UtilityClass.getConfigDetails("lname"),UtilityClass.getConfigDetails("zip"));
+    UtilityClass.toTakeScreenShot(driver);
+    UtilityClass.getWait();
     cop.toCont();
+    UtilityClass.getWait();
+    UtilityClass.toTakeScreenShot(driver);
 }
 
 @When("check the details")
 public void check_the_details() {
    rp.getSummary();
+   UtilityClass.getWait();
+   UtilityClass.toTakeScreenShot(driver);
 }
 
 @When("click on finish button")
 public void click_on_finish_button() {
     rp.toFinish();
+    UtilityClass.getWait();
+    UtilityClass.toTakeScreenShot(driver);
 }
 
 @Then("user redirected to checkout complete page")
