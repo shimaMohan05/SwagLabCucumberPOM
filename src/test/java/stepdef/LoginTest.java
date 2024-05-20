@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import hookspack.ThreadLocalDemo;
+import hookspack.UtilityClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,6 +23,7 @@ public class LoginTest {
 	public void enter_and(String un, String pw) {
 lp.toEnterCredentials(un, pw);
 
+
 	}
 
 	@When("click on login button")
@@ -34,6 +36,7 @@ lp.toLogin();
 	public void valid_users_can_able_to_enter_into_inventory_page() {
 
 Assert.assertTrue(driver.getCurrentUrl().contains("inventory"),"Failed to login");
+
 System.out.println("Successfully login");
 	}
 

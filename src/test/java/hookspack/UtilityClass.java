@@ -45,6 +45,7 @@ public class UtilityClass {
 		}
 		
 	}
+	
 	public static void getWait()
 	{
 		try {

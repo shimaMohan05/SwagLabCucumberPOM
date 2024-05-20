@@ -1,0 +1,787 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 20, 2024 05:39:59 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SwagLab end to end testing</p>
+            <p class="text-sm">
+              <span>5:40:00 pm</span> / <span>00:00:04:480</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SwagLab end to end testing</h5>
+<span class='badge badge-success'>05.20.2024 5:40:00 pm</span>
+<span class='badge badge-danger'>05.20.2024 5:40:04 pm</span>
+<span class='badge badge-default'>00:00:04:480</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check the inventory page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdef.InventoryTest.user_is_logged_into_swaglab_application()">
+                <span>Given user is logged into swaglab application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.InventoryTest.check_the_products_in_the_inventory_page()">
+                <span>When check the products in the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.InventoryTest.click_on_the_cart_button_for_the_product(java.lang.String)">
+                <span>And click on the cart button for the product "Sauce Labs Backpack"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.InventoryTest.then_click_on_cart_icon()">
+                <span>And then click on cart icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.InventoryTest.user_can_entered_into_cart_page()">
+                <span>Then user can entered into cart page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">test the end to end testing of swaglab</p>
+            <p class="text-sm">
+              <span>5:40:04 pm</span> / <span>00:00:02:476</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">test the end to end testing of swaglab</h5>
+<span class='badge badge-success'>05.20.2024 5:40:04 pm</span>
+<span class='badge badge-danger'>05.20.2024 5:40:07 pm</span>
+<span class='badge badge-default'>00:00:02:476</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>test the cart page functionalities</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdef.CartTest.user_should_be_in_cart_page()">
+                <span>Given user should be in cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.click_on_remove_button()">
+                <span>When click on remove button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.product_will_be_removed_from_cart()">
+                <span>Then product will be removed from cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.click_on_continue_button()">
+                <span>When click on continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.user_will_redirected_to_inventory_page()">
+                <span>Then user will redirected to inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.user_can_select_new_product_from_inventory_page()">
+                <span>When user can select new product from inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.user_can_click_on_cart_button()">
+                <span>And user can click on cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.user_rediredted_to_cart_page()">
+                <span>Then user rediredted to cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.user_click_on_checkout_button()">
+                <span>When user click on checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CartTest.user_will_redirected_to_checkout_page()">
+                <span>Then user will redirected to checkout page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the end to end functionality of swaglab functionality</p>
+            <p class="text-sm">
+              <span>5:40:07 pm</span> / <span>00:00:02:492</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the end to end functionality of swaglab functionality</h5>
+<span class='badge badge-success'>05.20.2024 5:40:07 pm</span>
+<span class='badge badge-danger'>05.20.2024 5:40:09 pm</span>
+<span class='badge badge-default'>00:00:02:492</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>Test the checkout page functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdef.CheckoutTest.user_should_be_in_checkout_page()">
+                <span>Given user should be in checkout page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CheckoutTest.enter_firstname_lastname_and_zip(io.cucumber.datatable.DataTable)">
+                <span>When enter firstname , lastname and zip</span>
+      <div><table class='markup-table table '><tr><td>firstname</td><td>lastname</td><td>zip</td></tr><tr><td>shima</td><td>mohan</td><td>560060</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CheckoutTest.click_on_continue_button_in_checkout_page()">
+                <span>When click on continue button in checkout page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.CheckoutTest.user_redirected_to_overview_page()">
+                <span>Then user redirected to overview  page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing the login page</p>
+            <p class="text-sm">
+              <span>5:40:09 pm</span> / <span>00:00:15:218</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Testing the login page</h5>
+<span class='badge badge-success'>05.20.2024 5:40:09 pm</span>
+<span class='badge badge-danger'>05.20.2024 5:40:24 pm</span>
+<span class='badge badge-default'>00:00:15:218</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log fail-bg mr-2">Fail</span>Testing login page with different set of credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>Testing login page with different set of credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given open swaglab application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter "standard_user" and "secret_sauce"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then valid users can able to enter into inventory page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>Testing login page with different set of credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given open swaglab application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter "admin" and "admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then valid users can able to enter into inventory page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Failed to login expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at stepdef.LoginTest.valid_users_can_able_to_enter_into_inventory_page(LoginTest.java:38)
+	at ✽.valid users can able to enter into inventory page(file:///C:/StaragileCodes/eclipse-workspace-staragile/SwagLabPOMCucum/src/test/resources/Features/login.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="48"><span class="badge log fail-bg mr-2">Fail</span>Testing login page with different set of credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given open swaglab application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter "locked_out_user" and "secret_sauce"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then valid users can able to enter into inventory page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Failed to login expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at stepdef.LoginTest.valid_users_can_able_to_enter_into_inventory_page(LoginTest.java:38)
+	at ✽.valid users can able to enter into inventory page(file:///C:/StaragileCodes/eclipse-workspace-staragile/SwagLabPOMCucum/src/test/resources/Features/login.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="55"><span class="badge log fail-bg mr-2">Fail</span>Testing login page with different set of credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given open swaglab application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter "Shima" and "shima123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then valid users can able to enter into inventory page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Failed to login expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at stepdef.LoginTest.valid_users_can_able_to_enter_into_inventory_page(LoginTest.java:38)
+	at ✽.valid users can able to enter into inventory page(file:///C:/StaragileCodes/eclipse-workspace-staragile/SwagLabPOMCucum/src/test/resources/Features/login.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>Testing login page with different set of credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given open swaglab application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter "performance_glitch_user" and "secret_sauce"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then valid users can able to enter into inventory page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the end to end functionality of Swaglab</p>
+            <p class="text-sm">
+              <span>5:40:24 pm</span> / <span>00:00:17:835</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the end to end functionality of Swaglab</h5>
+<span class='badge badge-success'>05.20.2024 5:40:24 pm</span>
+<span class='badge badge-danger'>05.20.2024 5:40:42 pm</span>
+<span class='badge badge-default'>00:00:17:835</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Test overview page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdef.ReviewTest.user_should_be_in_review_page()">
+                <span>Given user should be in review page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.ReviewTest.check_the_details()">
+                <span>When check the details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.ReviewTest.click_on_finish_button()">
+                <span>And click on finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdef.ReviewTest.user_redirected_to_checkout_complete_page()">
+                <span>Then user redirected to checkout complete page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:40:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='46'>Then valid users can able to enter into inventory page</a>
+<div class="">
+<span class="badge badge-default">Testing the login page.Testing login page with different set of credentials.Then valid users can able to enter into inventory page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:40:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='53'>Then valid users can able to enter into inventory page</a>
+<div class="">
+<span class="badge badge-default">Testing the login page.Testing login page with different set of credentials.Then valid users can able to enter into inventory page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:40:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='60'>Then valid users can able to enter into inventory page</a>
+<div class="">
+<span class="badge badge-default">Testing the login page.Testing login page with different set of credentials.Then valid users can able to enter into inventory page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 20, 2024 05:39:59 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 20, 2024 05:40:42 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='20%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'><b>6</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='33%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='93%'><b>40</b> steps passed</small></div>
+<div>
+<small data-tooltip='6%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"SwagLab end to end testing":4.48,"test the end to end testing of swaglab":2.476,"Test the end to end functionality of swaglab functionality":2.492,"Testing the login page":15.218,"Test the end to end functionality of Swaglab":17.835
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 6,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 40,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
