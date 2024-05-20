@@ -10,9 +10,9 @@ public class LoginPage {
 		this.driver=driver;
 		
 	}
-	By uname=By.id("user-name");
-	By pword=By.id("password");
-	By btn=By.id("login-button");
+	private By uname=By.id("user-name");
+	private By pword=By.id("password");
+	private By btn=By.id("login-button");
 	
 	
 	
