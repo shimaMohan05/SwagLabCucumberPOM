@@ -1,7 +1,7 @@
 package stepdef;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import hookspack.ThreadLocalDemo;
 import hookspack.UtilityClass;
@@ -38,7 +38,7 @@ public void then_click_on_cart_icon() {
 }
 @Then("user can entered into cart page")
 public void user_can_entered_into_cart_page() {
-	 Assert.assertTrue(driver.getCurrentUrl().contains("cart"),"Fail");
+	 Assert.assertFalse(!driver.getCurrentUrl().contains("cart"));
 	  System.out.println("passed");
 }
 

@@ -1,10 +1,10 @@
 package stepdef;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import hookspack.ThreadLocalDemo;
-import hookspack.UtilityClass;
+//import hookspack.UtilityClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,7 +35,7 @@ lp.toLogin();
 	@Then("valid users can able to enter into inventory page")
 	public void valid_users_can_able_to_enter_into_inventory_page() {
 
-Assert.assertTrue(driver.getCurrentUrl().contains("inventory"),"Failed to login");
+Assert.assertFalse(!driver.getCurrentUrl().contains("inventory"));
 
 System.out.println("Successfully login");
 	}

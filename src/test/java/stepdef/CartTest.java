@@ -1,7 +1,7 @@
 package stepdef;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import hookspack.ThreadLocalDemo;
 import hookspack.UtilityClass;
@@ -45,7 +45,7 @@ cp.toContinue();
 	@Then("user will redirected to inventory page")
 	public void user_will_redirected_to_inventory_page() {
 
-Assert.assertTrue(driver.getCurrentUrl().contains("inventory"),"failed");
+Assert.assertFalse(!driver.getCurrentUrl().contains("inventory"));
 System.out.println("user redirected to inventory");
 	}
 
@@ -64,7 +64,7 @@ ip.toCart();
 	@Then("user rediredted to cart page")
 	public void user_rediredted_to_cart_page() {
 
-Assert.assertTrue(driver.getCurrentUrl().contains("cart"),"failed");
+Assert.assertFalse(!driver.getCurrentUrl().contains("cart"));
 System.out.println("user redirected to cart page");
 	}
 
@@ -77,7 +77,7 @@ cp.toCheckOut();
 	@Then("user will redirected to checkout page")
 	public void user_will_redirected_to_checkout_page() {
 
-Assert.assertTrue(driver.getCurrentUrl().contains("checkout"),"failed");
+Assert.assertFalse(!driver.getCurrentUrl().contains("checkout"));
 System.out.println("user redirected to checkout");
 	}
 	

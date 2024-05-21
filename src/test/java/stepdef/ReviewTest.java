@@ -1,7 +1,7 @@
 package stepdef;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import hookspack.ThreadLocalDemo;
 import hookspack.UtilityClass;
@@ -61,7 +61,7 @@ public void click_on_finish_button() {
 
 @Then("user redirected to checkout complete page")
 public void user_redirected_to_checkout_complete_page() {
-	Assert.assertTrue(driver.getCurrentUrl().contains("checkout-complete"),"failed");
+	Assert.assertFalse(!driver.getCurrentUrl().contains("checkout-complete"));
 	System.out.println("user compleated booking product");
 }
 

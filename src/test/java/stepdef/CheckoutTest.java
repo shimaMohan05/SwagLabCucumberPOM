@@ -1,7 +1,7 @@
 package stepdef;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import hookspack.ThreadLocalDemo;
 import hookspack.UtilityClass;
@@ -45,7 +45,7 @@ cop.toCont();
 	@Then("user redirected to overview  page")
 	public void user_redirected_to_overview_page() {
 
-		Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-two"),"failed");
+		Assert.assertFalse(!driver.getCurrentUrl().contains("checkout-step-two"));
 		System.out.println("user redirected to review page");
 	}
 
