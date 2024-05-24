@@ -74,7 +74,7 @@
 					<version>3.2.5</version>
 					<configuration>
 						<includes>
-							<includeFiles>**/*RunnerTest.java</includeFiles>
+						<includeFiles>**/*RunnerTest.java</includeFiles>
 						</includes>
 					</configuration>
 				</plugin>
