@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
                  glue= {"stepdef","hookspack"},
                  publish =true,
                  //plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-                   plugin= {"pretty","html:target/cucumber.html"}
+                 //  plugin= {"pretty","html:target/cucumber.html"},
+                   plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}
                  
                  )
 public class SwaglabRunnerTest {
